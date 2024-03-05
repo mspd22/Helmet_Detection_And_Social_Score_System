@@ -16,8 +16,8 @@ def predict(image_path):
     _ = plt.imshow(mpimg.imread(img0))
 
     # for person on bike
-    weights0_path = 'Person/yolov3-obj_final.weights'
-    configuration0_path = 'Person/yolov3_pb.cfg'
+    weights0_path = 'yolov3-obj_final.weights'
+    configuration0_path = 'yolov3_pb.cfg'
 
     probability_minimum = 0.5
     threshold = 0.3
@@ -33,8 +33,8 @@ def predict(image_path):
     # In[5]:
 
     # for helmet
-    weights1_path = 'Helmet/yolov3-helmet.weights'
-    configuration1_path = 'Helmet/yolov3-helmet.cfg'
+    weights1_path = 'yolov3-helmet.weights'
+    configuration1_path = 'yolov3-helmet.cfg'
 
     # In[6]:
 
