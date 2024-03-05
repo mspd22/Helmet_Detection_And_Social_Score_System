@@ -2,8 +2,8 @@ import streamlit as st
 import requests
 import streamlit_lottie
 import webbrowser
-from BTP import predict
-from BTP1 import predict1
+from helmet import predict
+from licence_plate import predict1
 import os
 import cv2
 
@@ -93,7 +93,7 @@ Welcome to the Helmet and Number Plate Detection system! Our project is designed
         )
         st.image(uploaded_image, caption='Uploaded Image', width = 400)
         image_data = uploaded_image.read()
-        output_directory = 'C:/Users/saura/OneDrive/Desktop/BTP/'
+        output_directory = '/CODE/'
         output_filename = "uploaded_image.jpg"
         output_path = output_directory + output_filename
 
