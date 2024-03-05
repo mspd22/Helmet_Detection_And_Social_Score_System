@@ -4,8 +4,8 @@ def predict1(image_path):
     import matplotlib.pyplot as plt
     from PIL import Image
     plt.style.use('dark_background')
-    # img_ori = cv2.imread("presentation\\np_without_helmet.jpeg")
-    img_ori = cv2.imread("presentation\\np_with_helmet.jpeg.JPG")
+
+    img_ori = cv2.imread("np_with_helmet.jpeg.JPG")
     height, width, channel = img_ori.shape
 
     plt.figure(figsize=(12, 10))
